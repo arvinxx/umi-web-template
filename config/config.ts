@@ -1,5 +1,6 @@
 // https://umijs.org/config/
 import { defineConfig } from 'umi';
+
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 import routes from './routes';
@@ -40,7 +41,6 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
-  esbuild: {},
   // https://github.com/zthxxx/react-dev-inspector
   plugins: ['react-dev-inspector/plugins/umi/react-inspector'],
   inspectorConfig: {
