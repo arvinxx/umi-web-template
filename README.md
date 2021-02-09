@@ -1,8 +1,20 @@
 基于 [Ant Design Pro](https://pro.ant.design) 的 web app 开发脚手架
 
+[![Release CI][release-ci]][deploy-ci-url][![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
 
-[![Build With Umi](https://img.shields.io/badge/build%20with-umi-028fe4.svg?style=flat-square)](http://umijs.org/) ![](https://badgen.net/badge/icon/Ant%20Design?icon=https://gw.alipayobjects.com/zos/antfincdn/Pp4WPgVDB3/KDpgvguMpGfqaHPjicRK.svg&label) ![Github Action](https://github.com/ant-design/ant-design-pro/workflows/Node%20CI/badge.svg)
+[![Build With Umi][umi]](http://umijs.org/)
 
+[umi]: https://img.shields.io/badge/build%20with-umi-028fe4.svg?
+[gitmoji]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg
+[gitmoji-url]: https://gitmoji.carloscuesta.me/
+[semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-repo]: https://github.com/semantic-release/semantic-release
+[license-url]: https://img.shields.io/github/license/arvinxx/gitmoji-commit-workflow-template
+
+<!-- Github CI -->
+
+[release-ci]: https://github.com/arvinxx/umi-web-template/workflows/Release/badge.svg
+[deploy-ci-url]: https://github.com/arvinxx/umi-web-template/actions?query=workflow%3A%22Release%22
 
 ## 特性
 
@@ -17,5 +29,3 @@
 - :gear: **最佳实践**：良好的工程实践助您持续产出高质量代码
 - :1234: **Mock 数据**：实用的本地数据调试方案
 - :white_check_mark: **UI 测试**：自动化测试保障前端产品质量
-
-
