@@ -2,6 +2,23 @@
 
 @pro-header-hover-bg: rgba(0, 0, 0, 0.025);
 
+:global(.ant-pro-global-header) {
+  .dark {
+    .action {
+      color: @text-color;
+      > span {
+        color: @text-color;
+      }
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+        > span {
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}
+
 .menu {
   :global(.anticon) {
     margin-right: 8px;
@@ -51,32 +68,13 @@
   }
 }
 
-.dark {
-  .action {
+.dark .action {
+  color: rgba(255, 255, 255, 0.85);
+  > span {
     color: rgba(255, 255, 255, 0.85);
-    > span {
-      color: rgba(255, 255, 255, 0.85);
-    }
-    &:hover,
-    &:global(.opened) {
-      background: @primary-color;
-    }
   }
-}
-
-:global(.ant-pro-global-header) {
-  .dark {
-    .action {
-      color: @text-color;
-      > span {
-        color: @text-color;
-      }
-      &:hover {
-        color: rgba(255, 255, 255, 0.85);
-        > span {
-          color: rgba(255, 255, 255, 0.85);
-        }
-      }
-    }
+  &:hover,
+  &:global(.opened) {
+    background: @primary-color;
   }
 }
