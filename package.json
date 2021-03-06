@@ -2,7 +2,7 @@
   "name": "umi-web-template",
   "version": "1.0.0",
   "private": true,
-  "description": "An out-of-box UI solution for enterprise applications",
+  "description": "A web template",
   "scripts": {
     "start": "umi dev",
     "start:no-mock": "cross-env MOCK=none umi dev",
@@ -92,8 +92,9 @@
     "mockjs": "^1.0.1-beta3",
     "prettier": "^2.0.1",
     "semantic-release": "^17.3.7",
+    "semantic-release-config-gitmoji": "^1.1.0",
     "stylelint": "^13.0.0",
     "typescript": "^4.0.3",
-    "umi-plugin-tailwindcss": "^2.1.3"
+    "umi-plugin-tailwindcss": "^3.0.3"
   }
 }
