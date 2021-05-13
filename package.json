@@ -81,7 +81,7 @@
     "@umijs/yorkie": "^2.0.3",
     "@vercel/node": "^1.9.0",
     "chalk": "^4.0.0",
-    "commitlint": "^11.0.0",
+    "commitlint": "^12.1.4",
     "commitlint-config-gitmoji": "^2.2.1",
     "conventional-changelog-gitmoji-config": "^1.4.0",
     "cross-env": "^7.0.0",
