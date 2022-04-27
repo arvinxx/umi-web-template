@@ -70,7 +70,7 @@
     "@types/jest": "^26.0.0",
     "@types/lodash": "^4.14.144",
     "@types/qs": "^6.5.3",
-    "@types/react": "^17.0.0",
+    "@types/react": "^18.0.8",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "@umijs/fabric": "^2.3.0",
