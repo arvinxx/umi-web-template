@@ -77,7 +77,9 @@ const NoticeList: React.FC<NoticeIconTabProps> = ({
                   }
                   description={
                     <div>
-                      <div className={styles.description}>{item.description}</div>
+                      <div className={styles.description}>
+                        {item.description}
+                      </div>
                       <div className={styles.datetime}>{item.datetime}</div>
                     </div>
                   }

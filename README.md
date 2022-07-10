@@ -2,9 +2,7 @@
 
 基于 [Ant Design Pro](https://pro.ant.design) 的 web app 开发脚手架
 
-[![Release CI][release-ci]][deploy-ci-url][![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
-
-[![Build With Umi][umi]](http://umijs.org/)
+[![Release CI][release-ci]][deploy-ci-url][![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url] [![Build With Umi][umi]](http://umijs.org/)
 
 [umi]: https://img.shields.io/badge/build%20with-umi-028fe4.svg?
 [gitmoji]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg

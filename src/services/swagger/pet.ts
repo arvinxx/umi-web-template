@@ -3,7 +3,10 @@
 import { request } from '@umijs/max';
 
 /** Update an existing pet PUT /pet */
-export async function updatePet(body: API.Pet, options?: { [key: string]: any }) {
+export async function updatePet(
+  body: API.Pet,
+  options?: { [key: string]: any },
+) {
   return request<any>('/pet', {
     method: 'PUT',
     headers: {
@@ -56,7 +59,9 @@ export async function updatePetWithForm(
     if (item !== undefined && item !== null) {
       formData.append(
         ele,
-        typeof item === 'object' && !(item instanceof File) ? JSON.stringify(item) : item,
+        typeof item === 'object' && !(item instanceof File)
+          ? JSON.stringify(item)
+          : item,
       );
     }
   });
@@ -108,7 +113,9 @@ export async function uploadFile(
     if (item !== undefined && item !== null) {
       formData.append(
         ele,
-        typeof item === 'object' && !(item instanceof File) ? JSON.stringify(item) : item,
+        typeof item === 'object' && !(item instanceof File)
+          ? JSON.stringify(item)
+          : item,
       );
     }
   });

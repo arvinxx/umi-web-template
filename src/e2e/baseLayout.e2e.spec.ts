@@ -17,7 +17,10 @@ function formatter(routes: any, parentPath = ''): string[] {
     }
     if (item.routes) {
       result = result.concat(
-        formatter(item.routes, item.path ? `${fixedParentPath}/${item.path}` : parentPath),
+        formatter(
+          item.routes,
+          item.path ? `${fixedParentPath}/${item.path}` : parentPath,
+        ),
       );
     }
   });
@@ -32,7 +35,10 @@ const testPage = (path: string, page: Page) => async () => {
   await page.waitForSelector('footer', {
     timeout: 2000,
   });
-  const haveFooter = await page.evaluate(() => document.getElementsByTagName('footer').length > 0);
+  const haveFooter = await page.evaluate(
+    () => document.getElementsByTagName('footer').length > 0,
+  );
+  // eslint-disable-next-line jest/no-standalone-expect
   expect(haveFooter).toBeTruthy();
 };
 

@@ -27,7 +27,7 @@ jobs:
         run: pnpm install
 
       - name: Code Check
-        run: pnpm run lint && pnpm run test
+        run: pnpm run lint
 
       - name: Release
         run: pnpm run release

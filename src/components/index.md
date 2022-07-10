@@ -90,15 +90,15 @@ export default () => {
 
 ### API
 
-| 参数            | 说明                               | 类型                         | 默认值 |
-| --------------- | ---------------------------------- | ---------------------------- | ------ |
-| value           | 输入框的值                         | `string`                     | -      |
-| onChange        | 值修改后触发                       | `(value?: string) => void`   | -      |
-| onSearch        | 查询后触发                         | `(value?: string) => void`   | -      |
-| options         | 选项菜单的的列表                   | `{label,value}[]`            | -      |
-| defaultVisible  | 输入框默认是否显示，只有第一次生效 | `boolean`                    | -      |
-| visible         | 输入框是否显示                     | `boolean`                    | -      |
-| onVisibleChange | 输入框显示隐藏的回调函数           | `(visible: boolean) => void` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| value | 输入框的值 | `string` | - |
+| onChange | 值修改后触发 | `(value?: string) => void` | - |
+| onSearch | 查询后触发 | `(value?: string) => void` | - |
+| options | 选项菜单的的列表 | `{label,value}[]` | - |
+| defaultVisible | 输入框默认是否显示，只有第一次生效 | `boolean` | - |
+| visible | 输入框是否显示 | `boolean` | - |
+| onVisibleChange | 输入框显示隐藏的回调函数 | `(visible: boolean) => void` | - |
 
 ## NoticeIcon 通知工具
 
@@ -115,14 +115,16 @@ export default () => {
   const list = [
     {
       id: '000000001',
-      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png',
+      avatar:
+        'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png',
       title: '你收到了 14 份新周报',
       datetime: '2017-08-09',
       type: 'notification',
     },
     {
       id: '000000002',
-      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/OKJXDXrmkNshAMvwtvhu.png',
+      avatar:
+        'https://gw.alipayobjects.com/zos/rmsportal/OKJXDXrmkNshAMvwtvhu.png',
       title: '你推荐的 曲妮妮 已通过第三轮面试',
       datetime: '2017-08-08',
       type: 'notification',
@@ -189,19 +191,19 @@ export default () => {
 
 ### NoticeIcon.Tab API
 
-| 参数         | 说明               | 类型                                 | 默认值 |
-| ------------ | ------------------ | ------------------------------------ | ------ |
-| count        | 有多少未读通知     | `number`                             | -      |
-| title        | 通知 Tab 的标题    | `ReactNode`                          | -      |
-| showClear    | 展示清除按钮       | `boolean`                            | `true` |
-| showViewMore | 展示加载更         | `boolean`                            | `true` |
-| tabKey       | Tab 的唯一 key     | `string`                             | -      |
-| onClick      | 子项的单击事件     | `(item: API.NoticeIconData) => void` | -      |
-| onClear      | 清楚按钮的点击     | `()=>void`                           | -      |
-| emptyText    | 为空的时候测试     | `()=>void`                           | -      |
-| viewMoreText | 查看更多的按钮文字 | `string`                             | -      |
-| onViewMore   | 查看更多的按钮点击 | `( e: MouseEvent) => void`           | -      |
-| list         | 通知信息的列表     | `API.NoticeIconData`                 | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| count | 有多少未读通知 | `number` | - |
+| title | 通知 Tab 的标题 | `ReactNode` | - |
+| showClear | 展示清除按钮 | `boolean` | `true` |
+| showViewMore | 展示加载更 | `boolean` | `true` |
+| tabKey | Tab 的唯一 key | `string` | - |
+| onClick | 子项的单击事件 | `(item: API.NoticeIconData) => void` | - |
+| onClear | 清楚按钮的点击 | `()=>void` | - |
+| emptyText | 为空的时候测试 | `()=>void` | - |
+| viewMoreText | 查看更多的按钮文字 | `string` | - |
+| onViewMore | 查看更多的按钮点击 | `( e: MouseEvent) => void` | - |
+| list | 通知信息的列表 | `API.NoticeIconData` | - |
 
 ### NoticeIconData
 
@@ -231,7 +233,10 @@ RightContent 是以上几个组件的组合，同时新增了 plugins 的 `Selec
     placeholder="站内搜索"
     defaultValue="umi ui"
     options={[
-      { label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>, value: 'umi ui' },
+      {
+        label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>,
+        value: 'umi ui',
+      },
       {
         label: <a href="next.ant.design">Ant Design</a>,
         value: 'Ant Design',

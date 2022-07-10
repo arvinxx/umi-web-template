@@ -17,7 +17,8 @@ const InfoCard: React.FC<{
     <div
       style={{
         backgroundColor: '#FFFFFF',
-        boxShadow: '0 2px 4px 0 rgba(35,49,128,0.02), 0 4px 8px 0 rgba(49,69,179,0.02)',
+        boxShadow:
+          '0 2px 4px 0 rgba(35,49,128,0.02), 0 4px 8px 0 rgba(49,69,179,0.02)',
         borderRadius: '8px',
         fontSize: '14px',
         color: 'rgba(0,0,0,0.65)',
