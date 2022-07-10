@@ -16,10 +16,10 @@ export default [
       {
         name: 'login',
         path: '/user/login',
-        component: './User/Login',
+        component: '@/pages/User/Login',
       },
       {
-        component: './404',
+        component: '@/pages/404',
       },
     ],
   },
@@ -27,7 +27,7 @@ export default [
     path: '/welcome',
     name: 'welcome',
     icon: 'smile',
-    component: './Welcome',
+    component: '@/pages/Welcome',
   },
   {
     path: '/admin',
@@ -39,10 +39,10 @@ export default [
         path: '/admin/sub-page',
         name: 'sub-page',
         icon: 'smile',
-        component: './Welcome',
+        component: '@/pages/Welcome',
       },
       {
-        component: './404',
+        component: '@/pages/404',
       },
     ],
   },
@@ -50,13 +50,13 @@ export default [
     name: 'list.table-list',
     icon: 'table',
     path: '/list',
-    component: './TableList',
+    component: '@/pages/TableList',
   },
   {
     path: '/',
     redirect: '/welcome',
   },
   {
-    component: './404',
+    component: '@/pages/404',
   },
 ];
