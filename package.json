@@ -8,6 +8,7 @@
     "build:analyze": "cross-env ANALYZE=1 max build",
     "dev": "npm run start:dev",
     "i18n-remove": "pro i18n-remove --locale=zh-CN --write",
+    "postinstall": "max setup",
     "lint": "max setup && npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style",
