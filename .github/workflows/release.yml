@@ -11,28 +11,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
         with:
-          node-version: '14'
+          node-version: '16'
+          cache: 'pnpm'
 
-      - name: Cache multiple paths
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
-            **/node_modules
-          key: yarn-${{ runner.os }}-${{ hashFiles('package.json') }}
-
-      - name: install
-        run: yarn
+      - name: Install deps
+        run: pnpm install
 
       - name: Code Check
-        run: yarn lint && yarn test
+        run: pnpm run lint && pnpm run test
 
       - name: Release
-        run: yarn release
+        run: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
