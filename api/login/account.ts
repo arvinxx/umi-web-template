@@ -1,6 +1,6 @@
-import type { Request, Response } from 'express';
+import type { NowRequest, NowResponse } from '@vercel/node';
 
-export default async (req: Request, res: Response) => {
+export default async (req: NowRequest, res: NowResponse) => {
   const { password, userName, type } = req.body;
 
   if (password === 'ant.design' && userName === 'admin') {
