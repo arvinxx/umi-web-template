@@ -1,10 +1,10 @@
 import { SearchOutlined } from '@ant-design/icons';
+import type { InputRef } from 'antd';
 import { AutoComplete, Input } from 'antd';
-import useMergeValue from 'use-merge-value';
 import type { AutoCompleteProps } from 'antd/es/auto-complete';
-import React, { useRef } from 'react';
-
 import classNames from 'classnames';
+import useMergedState from 'rc-util/es/hooks/useMergedState';
+import React, { useRef } from 'react';
 import styles from './index.less';
 
 export type HeaderSearchProps = {
@@ -14,8 +14,8 @@ export type HeaderSearchProps = {
   className?: string;
   placeholder?: string;
   options: AutoCompleteProps['options'];
-  defaultOpen?: boolean;
-  open?: boolean;
+  defaultVisible?: boolean;
+  visible?: boolean;
   defaultValue?: string;
   value?: string;
 };
@@ -26,27 +26,26 @@ const HeaderSearch: React.FC<HeaderSearchProps> = (props) => {
     defaultValue,
     onVisibleChange,
     placeholder,
-    open,
-    defaultOpen,
+    visible,
+    defaultVisible,
     ...restProps
   } = props;
 
-  const inputRef = useRef<Input | null>(null);
+  const inputRef = useRef<InputRef | null>(null);
 
-  const [value, setValue] = useMergeValue<string | undefined>(defaultValue, {
+  const [value, setValue] = useMergedState<string | undefined>(defaultValue, {
     value: props.value,
     onChange: props.onChange,
   });
 
-  const [searchMode, setSearchMode] = useMergeValue(defaultOpen ?? false, {
-    value: props.open,
+  const [searchMode, setSearchMode] = useMergedState(defaultVisible ?? false, {
+    value: props.visible,
     onChange: onVisibleChange,
   });
 
   const inputClass = classNames(styles.input, {
     [styles.show]: searchMode,
   });
-
   return (
     <div
       className={classNames(className, styles.headerSearch)}
@@ -74,14 +73,11 @@ const HeaderSearch: React.FC<HeaderSearchProps> = (props) => {
         key="AutoComplete"
         className={inputClass}
         value={value}
-        style={{
-          height: 28,
-          marginTop: -6,
-        }}
         options={restProps.options}
-        onChange={setValue}
+        onChange={(completeValue) => setValue(completeValue)}
       >
         <Input
+          size="small"
           ref={inputRef}
           defaultValue={defaultValue}
           aria-label={placeholder}

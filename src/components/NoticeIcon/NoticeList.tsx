@@ -1,29 +1,25 @@
 import { Avatar, List } from 'antd';
-
-import React from 'react';
 import classNames from 'classnames';
-import type { NoticeIconData } from './index';
+import React from 'react';
 import styles from './NoticeList.less';
 
 export type NoticeIconTabProps = {
   count?: number;
-  name?: string;
   showClear?: boolean;
   showViewMore?: boolean;
   style?: React.CSSProperties;
   title: string;
-  tabKey: string;
-  data?: NoticeIconData[];
-  onClick?: (item: NoticeIconData) => void;
+  tabKey: API.NoticeIconItemType;
+  onClick?: (item: API.NoticeIconItem) => void;
   onClear?: () => void;
   emptyText?: string;
   clearText?: string;
   viewMoreText?: string;
-  list: NoticeIconData[];
+  list: API.NoticeIconItem[];
   onViewMore?: (e: any) => void;
 };
-const NoticeList: React.SFC<NoticeIconTabProps> = ({
-  data = [],
+const NoticeList: React.FC<NoticeIconTabProps> = ({
+  list = [],
   onClick,
   onClear,
   title,
@@ -34,7 +30,7 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
   viewMoreText,
   showViewMore = false,
 }) => {
-  if (!data || data.length === 0) {
+  if (!list || list.length === 0) {
     return (
       <div className={styles.notFound}>
         <img
@@ -47,9 +43,9 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
   }
   return (
     <div>
-      <List<NoticeIconData>
+      <List<API.NoticeIconItem>
         className={styles.list}
-        dataSource={data}
+        dataSource={list}
         renderItem={(item, i) => {
           const itemCls = classNames(styles.item, {
             [styles.read]: item.read,
@@ -64,30 +60,30 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
           ) : null;
 
           return (
-            <List.Item
-              className={itemCls}
-              key={item.key || i}
+            <div
               onClick={() => {
                 onClick?.(item);
               }}
             >
-              <List.Item.Meta
-                className={styles.meta}
-                avatar={leftIcon}
-                title={
-                  <div className={styles.title}>
-                    {item.title}
-                    <div className={styles.extra}>{item.extra}</div>
-                  </div>
-                }
-                description={
-                  <div>
-                    <div className={styles.description}>{item.description}</div>
-                    <div className={styles.datetime}>{item.datetime}</div>
-                  </div>
-                }
-              />
-            </List.Item>
+              <List.Item className={itemCls} key={item.key || i}>
+                <List.Item.Meta
+                  className={styles.meta}
+                  avatar={leftIcon}
+                  title={
+                    <div className={styles.title}>
+                      {item.title}
+                      <div className={styles.extra}>{item.extra}</div>
+                    </div>
+                  }
+                  description={
+                    <div>
+                      <div className={styles.description}>{item.description}</div>
+                      <div className={styles.datetime}>{item.datetime}</div>
+                    </div>
+                  }
+                />
+              </List.Item>
+            </div>
           );
         }}
       />
