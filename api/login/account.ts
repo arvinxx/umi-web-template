@@ -1,9 +1,9 @@
 import type { NowRequest, NowResponse } from '@vercel/node';
 
 export default async (req: NowRequest, res: NowResponse) => {
-  const { password, userName, type } = req.body;
+  const { password, username, type } = req.body;
 
-  if (password === 'ant.design' && userName === 'admin') {
+  if (password === 'ant.design' && username === 'admin') {
     res.send({
       status: 'ok',
       type,
@@ -11,7 +11,7 @@ export default async (req: NowRequest, res: NowResponse) => {
     });
     return;
   }
-  if (password === 'ant.design' && userName === 'user') {
+  if (password === 'ant.design' && username === 'user') {
     res.send({
       status: 'ok',
       type,
