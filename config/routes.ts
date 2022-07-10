@@ -13,11 +13,11 @@ export default [
     path: '/user',
     layout: false,
     routes: [
-      {
-        name: 'login',
-        path: '/user/login',
-        component: '@/pages/User/Login',
-      },
+      // {
+      //   name: 'login',
+      //   path: '/user/login',
+      //   component: './User/Login',
+      // },
       {
         component: '@/pages/404',
       },
