@@ -1,116 +1,129 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@ant-design/icons': ^4.7.0
-  '@ant-design/pro-cli': ^2.0.4
-  '@ant-design/pro-components': ^1.1.8
-  '@playwright/test': ^1.17.0
-  '@semantic-release/changelog': ^5.0.1
-  '@semantic-release/git': ^9.0.0
-  '@semantic-release/release-notes-generator': ^9.0.1
-  '@types/classnames': ^2.2.7
-  '@types/express': ^4.17.0
-  '@types/history': ^4.7.2
-  '@types/jest': ^26.0.0
-  '@types/lodash': ^4.14.144
-  '@types/qs': ^6.5.3
-  '@types/react': ^17.0.0
-  '@types/react-dom': ^17.0.0
-  '@types/react-helmet': ^6.1.0
-  '@umijs/fabric': ^2.11.1
-  '@umijs/max': ^4.0.6
-  '@umijs/openapi': ^1.6.0
-  '@umijs/route-utils': ^2.1.4
-  '@umijs/yorkie': ^2.0.3
-  '@vercel/node': ^1.9.0
-  antd: ^4.20.0
-  chalk: ^4.0.0
-  classnames: ^2.3.0
-  commitlint: ^17.0.3
-  commitlint-config-gitmoji: ^2.2.1
-  conventional-changelog-gitmoji-config: ^1.4.0
-  cross-env: ^7.0.0
-  cross-port-killer: ^1.3.0
-  detect-installer: ^1.0.0
-  eslint: ^8.19.0
-  husky: ^8.0.1
-  jsdom-global: ^3.0.0
-  lint-staged: ^10.0.0
-  lodash: ^4.17.0
-  mockjs: ^1.1.0
-  moment: ^2.29.0
-  omit.js: ^2.0.2
-  prettier: ^2.7.1
-  rc-menu: ^9.1.0
-  rc-util: ^5.16.0
-  react: ^17.0.0
-  react-dev-inspector: ^1.7.0
-  react-dom: ^17.0.0
-  react-helmet-async: ^1.2.0
-  semantic-release: ^19.0.3
-  semantic-release-config-gitmoji: ^1.2.4
-  stylelint: ^13.0.0
-  swagger-ui-dist: ^4.12.0
-  typescript: ^4.7.4
-  umi-presets-pro: ^1.0.1
-  umi-serve: ^1.9.10
+importers:
 
-dependencies:
-  '@ant-design/icons': 4.7.0_sfoxds7t5ydpegc3knd667wn6m
-  '@ant-design/pro-components': 1.1.8_sfoxds7t5ydpegc3knd667wn6m
-  '@umijs/max': 4.0.6_4kqfmmhpzc7pjqc3jiugdy4bbq
-  '@umijs/route-utils': 2.1.4
-  antd: 4.21.5_sfoxds7t5ydpegc3knd667wn6m
-  classnames: 2.3.1
-  lodash: 4.17.21
-  moment: 2.29.4
-  omit.js: 2.0.2
-  rc-menu: 9.6.0_sfoxds7t5ydpegc3knd667wn6m
-  rc-util: 5.22.5_sfoxds7t5ydpegc3knd667wn6m
-  react: 17.0.2
-  react-dev-inspector: 1.8.1_btogsl32fktgspgq3ptjr4t5gm
-  react-dom: 17.0.2_react@17.0.2
-  react-helmet-async: 1.3.0_sfoxds7t5ydpegc3knd667wn6m
+  .:
+    specifiers:
+      '@ant-design/icons': ^4.7.0
+      '@ant-design/pro-cli': ^2.0.4
+      '@ant-design/pro-components': ^1.1.8
+      '@playwright/test': ^1.17.0
+      '@semantic-release/changelog': ^5.0.1
+      '@semantic-release/git': ^9.0.0
+      '@semantic-release/release-notes-generator': ^9.0.1
+      '@types/classnames': ^2.2.7
+      '@types/express': ^4.17.0
+      '@types/history': ^4.7.2
+      '@types/jest': ^26.0.0
+      '@types/lodash': ^4.14.144
+      '@types/qs': ^6.5.3
+      '@types/react': ^17.0.0
+      '@types/react-dom': ^17.0.0
+      '@types/react-helmet': ^6.1.0
+      '@umijs/fabric': ^2.11.1
+      '@umijs/max': ^4.0.6
+      '@umijs/openapi': ^1.6.0
+      '@umijs/route-utils': ^2.1.4
+      '@umijs/yorkie': ^2.0.3
+      '@vercel/node': ^1.9.0
+      antd: ^4.20.0
+      chalk: ^4.0.0
+      classnames: ^2.3.0
+      commitlint: ^17.0.3
+      commitlint-config-gitmoji: ^2.2.1
+      conventional-changelog-gitmoji-config: ^1.4.0
+      cross-env: ^7.0.0
+      cross-port-killer: ^1.3.0
+      detect-installer: ^1.0.0
+      eslint: ^8.19.0
+      husky: ^8.0.1
+      jsdom-global: ^3.0.0
+      lint-staged: ^10.0.0
+      lodash: ^4.17.0
+      mockjs: ^1.1.0
+      moment: ^2.29.0
+      omit.js: ^2.0.2
+      prettier: ^2.7.1
+      rc-menu: ^9.1.0
+      rc-util: ^5.16.0
+      react: ^17.0.0
+      react-dev-inspector: ^1.7.0
+      react-dom: ^17.0.0
+      react-helmet-async: ^1.2.0
+      semantic-release: ^19.0.3
+      semantic-release-config-gitmoji: ^1.2.4
+      stylelint: ^13.0.0
+      swagger-ui-dist: ^4.12.0
+      typescript: ^4.7.4
+      umi-presets-pro: ^1.0.1
+      umi-serve: ^1.9.10
+    dependencies:
+      '@ant-design/icons': 4.7.0_sfoxds7t5ydpegc3knd667wn6m
+      '@ant-design/pro-components': 1.1.8_sfoxds7t5ydpegc3knd667wn6m
+      '@umijs/max': 4.0.6_4kqfmmhpzc7pjqc3jiugdy4bbq
+      '@umijs/route-utils': 2.1.4
+      antd: 4.21.5_sfoxds7t5ydpegc3knd667wn6m
+      classnames: 2.3.1
+      lodash: 4.17.21
+      moment: 2.29.4
+      omit.js: 2.0.2
+      rc-menu: 9.6.0_sfoxds7t5ydpegc3knd667wn6m
+      rc-util: 5.22.5_sfoxds7t5ydpegc3knd667wn6m
+      react: 17.0.2
+      react-dev-inspector: 1.8.1_btogsl32fktgspgq3ptjr4t5gm
+      react-dom: 17.0.2_react@17.0.2
+      react-helmet-async: 1.3.0_sfoxds7t5ydpegc3knd667wn6m
+    devDependencies:
+      '@ant-design/pro-cli': 2.1.5
+      '@playwright/test': 1.23.2
+      '@semantic-release/changelog': 5.0.1_semantic-release@19.0.3
+      '@semantic-release/git': 9.0.1_semantic-release@19.0.3
+      '@semantic-release/release-notes-generator': 9.0.3_semantic-release@19.0.3
+      '@types/classnames': 2.3.1
+      '@types/express': 4.17.13
+      '@types/history': 4.7.11
+      '@types/jest': 26.0.24
+      '@types/lodash': 4.14.182
+      '@types/qs': 6.9.7
+      '@types/react': 17.0.47
+      '@types/react-dom': 17.0.17
+      '@types/react-helmet': 6.1.5
+      '@umijs/fabric': 2.12.2
+      '@umijs/openapi': 1.6.0
+      '@umijs/yorkie': 2.0.5
+      '@vercel/node': 1.15.4
+      chalk: 4.1.2
+      commitlint: 17.0.3
+      commitlint-config-gitmoji: 2.2.5_commitlint@17.0.3
+      conventional-changelog-gitmoji-config: 1.4.3
+      cross-env: 7.0.3
+      cross-port-killer: 1.4.0
+      detect-installer: 1.0.2
+      eslint: 8.19.0
+      husky: 8.0.1
+      jsdom-global: 3.0.2
+      lint-staged: 10.5.4
+      mockjs: 1.1.0
+      prettier: 2.7.1
+      semantic-release: 19.0.3
+      semantic-release-config-gitmoji: 1.2.4_semantic-release@19.0.3
+      stylelint: 13.13.1
+      swagger-ui-dist: 4.12.0
+      typescript: 4.7.4
+      umi-presets-pro: 1.0.5_t3fyalmbgqaczk6hno2fefye3e
+      umi-serve: 1.9.11
 
-devDependencies:
-  '@ant-design/pro-cli': 2.1.5
-  '@playwright/test': 1.23.2
-  '@semantic-release/changelog': 5.0.1_semantic-release@19.0.3
-  '@semantic-release/git': 9.0.1_semantic-release@19.0.3
-  '@semantic-release/release-notes-generator': 9.0.3_semantic-release@19.0.3
-  '@types/classnames': 2.3.1
-  '@types/express': 4.17.13
-  '@types/history': 4.7.11
-  '@types/jest': 26.0.24
-  '@types/lodash': 4.14.182
-  '@types/qs': 6.9.7
-  '@types/react': 17.0.47
-  '@types/react-dom': 17.0.17
-  '@types/react-helmet': 6.1.5
-  '@umijs/fabric': 2.12.2
-  '@umijs/openapi': 1.6.0
-  '@umijs/yorkie': 2.0.5
-  '@vercel/node': 1.15.4
-  chalk: 4.1.2
-  commitlint: 17.0.3
-  commitlint-config-gitmoji: 2.2.5_commitlint@17.0.3
-  conventional-changelog-gitmoji-config: 1.4.3
-  cross-env: 7.0.3
-  cross-port-killer: 1.4.0
-  detect-installer: 1.0.2
-  eslint: 8.19.0
-  husky: 8.0.1
-  jsdom-global: 3.0.2
-  lint-staged: 10.5.4
-  mockjs: 1.1.0
-  prettier: 2.7.1
-  semantic-release: 19.0.3
-  semantic-release-config-gitmoji: 1.2.4_semantic-release@19.0.3
-  stylelint: 13.13.1
-  swagger-ui-dist: 4.12.0
-  typescript: 4.7.4
-  umi-presets-pro: 1.0.5_t3fyalmbgqaczk6hno2fefye3e
-  umi-serve: 1.9.11
+  api:
+    specifiers:
+      '@types/node': ^18.0.1
+      '@types/nodemailer': ^6.4.1
+      '@vercel/node': ^1.9.0
+      typescript: ^4.2.4
+    devDependencies:
+      '@types/node': 18.0.3
+      '@types/nodemailer': 6.4.4
+      '@vercel/node': 1.15.4
+      typescript: 4.7.4
 
 packages:
 
@@ -4415,6 +4428,12 @@ packages:
 
   /@types/node/18.0.3:
     resolution: {integrity: sha512-HzNRZtp4eepNitP+BD6k2L6DROIDG4Q0fm4x+dwfsr6LGmROENnok75VGw40628xf+iR24WeMFcHuuBDUAzzsQ==}
+
+  /@types/nodemailer/6.4.4:
+    resolution: {integrity: sha512-Ksw4t7iliXeYGvIQcSIgWQ5BLuC/mljIEbjf615svhZL10PE9t+ei8O9gDaD3FPCasUJn9KTLwz2JFJyiiyuqw==}
+    dependencies:
+      '@types/node': 18.0.3
+    dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
