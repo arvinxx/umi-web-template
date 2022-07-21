@@ -69,7 +69,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
-    "@umijs/fabric": "^2.11.1",
+    "@umijs/fabric": "^3.0.0",
     "@umijs/max": "^4.0.0-rc.22",
     "@umijs/openapi": "^1.6.0",
     "@umijs/yorkie": "^2.0.3",
