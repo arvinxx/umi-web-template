@@ -73,7 +73,7 @@
     "@umijs/max": "^4.0.0-rc.22",
     "@umijs/openapi": "^1.6.0",
     "@umijs/yorkie": "^2.0.3",
-    "@vercel/node": "^1.9.0",
+    "@vercel/node": "^2.5.9",
     "chalk": "^4.0.0",
     "commitlint": "^17.0.3",
     "commitlint-config-gitmoji": "^2.2.1",
