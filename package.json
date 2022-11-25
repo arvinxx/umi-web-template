@@ -82,7 +82,7 @@
     "husky": "^8.0.1",
     "jest": "^27",
     "jsdom-global": "^3.0.0",
-    "lint-staged": "^10.0.0",
+    "lint-staged": "^13.0.4",
     "mockjs": "^1.1.0",
     "prettier": "^2",
     "semantic-release": "^19.0.3",
