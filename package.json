@@ -71,7 +71,7 @@
     "@umijs/openapi": "^1.6.0",
     "@umijs/yorkie": "^2.0.3",
     "@vercel/node": "^1.9.0",
-    "chalk": "^4.0.0",
+    "chalk": "^5.0.0",
     "commitlint": "^17",
     "commitlint-config-gitmoji": "^2.2.1",
     "conventional-changelog-gitmoji-config": "^1.4.0",
