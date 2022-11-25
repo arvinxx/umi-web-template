@@ -1,1 +1,3 @@
-module.exports = require('@umijs/max/eslint');
+const config = require('@umijs/max/eslint');
+
+module.exports = config;

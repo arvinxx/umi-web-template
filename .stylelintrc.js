@@ -1,14 +1,5 @@
-const fabric = require('@umijs/fabric');
+const config = require('@umijs/max/stylelint');
 
-module.exports = {
-  ...fabric.stylelint,
-  rules: {
-    'at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: ['tailwind'],
-      },
-    ],
-    'no-descending-specificity': null,
-  },
-};
+console.log(config);
+
+module.exports = config;
