@@ -70,7 +70,7 @@
     "@types/testing-library__jest-dom": "^5",
     "@umijs/openapi": "^1.6.0",
     "@umijs/yorkie": "^2.0.3",
-    "@vercel/node": "^1.9.0",
+    "@vercel/node": "^2.7.1",
     "chalk": "^4.0.0",
     "commitlint": "^17",
     "commitlint-config-gitmoji": "^2.2.1",
