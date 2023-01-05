@@ -39,7 +39,7 @@
     "@ant-design/icons": "^4",
     "@ant-design/pro-components": "^2",
     "@umijs/max": "^4",
-    "@umijs/route-utils": "^2.1.4",
+    "@umijs/route-utils": "^4.0.1",
     "antd": "^5",
     "classnames": "^2",
     "lodash": "^4.17.0",
