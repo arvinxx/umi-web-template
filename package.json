@@ -64,7 +64,7 @@
     "@types/jest": "^27",
     "@types/lodash": "^4.14.144",
     "@types/qs": "^6.5.3",
-    "@types/react": "^17.0.0",
+    "@types/react": "^18.0.27",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "@types/testing-library__jest-dom": "^5",
