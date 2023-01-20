@@ -36,7 +36,7 @@
     "not ie <= 10"
   ],
   "dependencies": {
-    "@ant-design/icons": "^4",
+    "@ant-design/icons": "^5",
     "@ant-design/pro-components": "^2",
     "@umijs/max": "^4",
     "@umijs/route-utils": "^2.1.4",
