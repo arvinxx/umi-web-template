@@ -85,7 +85,7 @@
     "lint-staged": "^10.0.0",
     "mockjs": "^1.1.0",
     "prettier": "^2",
-    "semantic-release": "^19.0.3",
+    "semantic-release": "^20.0.3",
     "semantic-release-config-gitmoji": "^1.2.4",
     "stylelint": "^13.0.0",
     "swagger-ui-dist": "^4.12.0",
